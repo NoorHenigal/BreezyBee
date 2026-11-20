@@ -1,0 +1,36 @@
+BreezyBee: References source
+
+Bee fun facts that was used in Alerts Page:
+
+- Bees mostly fly between about 10-40 °C, with the best foraging
+  between 20-30 °C. Rain, wind and extreme temperatures stop bee flight.
+  Source: "A review of short-term weather impacts on honey production",
+  International Journal of Biometeorology (2024)
+  https://link.springer.com/10.1007/s00484-024-02824-0
+
+
+- Minimum flying temperature is about 54 °F (about 12-13 °C).
+  Bee activity drops above about 100 °F (about 38 °C).
+  Source: WeatherSTEM-honey bee lesson
+  https://learn.weatherstem.com/modules/learn/lessons/170/13.html
+
+- Rain and wind above about 15 mph (about 24 km/h) can stop bees foraging.
+  Source: University of Maine Cooperative Extension - Honeybee Flight Activity Index
+  https://extension.umaine.edu/ipm/?p=15134
+
+Note: the alert limits in myutils.py are from my own choices, based on the bee research above and typical Bahrain
+summer heat as inspiration. They are not official weather warning levels. The bee lines
+are written as fun facts.
+
+Images:
+
+- bee.gif - bee animation from Tenor
+  https://tenor.com/view/bee-honey-bee-bubuyog-gif-14247016670087426899
+
+- honey.gif - honey drip animation made for this project was made using a gif maker
+
+Tools and documentation:
+
+- Streamlit documentation (API reference): https://docs.streamlit.io/develop/api-reference
+- pandas documentation: https://pandas.pydata.org/docs/
+- AI claude was also used for date problem related to an error, used it to help debug. I guarantee it was not copy & pasted but rather for understanding concepts.
