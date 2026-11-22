@@ -3,6 +3,7 @@
 A Streamlit web app built for a local meteorology club to log daily weather observations and see climate patterns over time.
 
 **Live app:** https://breezybee-noor.streamlit.app/
+**Video Link:** https://youtu.be/Uwr0Gm4Vxfo
 ---
 
 ## About the project
