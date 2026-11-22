@@ -65,9 +65,12 @@ def validate_input(date, temperature, conditions, humidity, wind_speed, data):
 
 
 def validate_table(data):
-    """checks every row of the edited table before saving so returns (True, "OK") or (False, error message)."""
+    """checks every row of the edited table before saving so returns True or False."""
     # goes through the table one row at a time
     for index, row in data.iterrows():
+        # the condition must be one of my 5 weather options
+        if row["Conditions"] not in ["Sunny", "Cloudy", "Rainy", "Windy", "Stormy"]:
+            return False, "Conditions must be Sunny, Cloudy, Rainy, Windy or Stormy on " + str(row["Date"])
         if row["Temperature"] < -50 or row["Temperature"] > 60:
             return False, "Temperature is not realistic on " + str(row["Date"])
         if row["Humidity"] < 0 or row["Humidity"] > 100:
