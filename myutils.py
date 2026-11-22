@@ -9,10 +9,12 @@ COLUMNS = ["Date", "Temperature", "Conditions", "Humidity", "Wind_Speed"]
 
 
 def clean_dates(data):
-    """makes every date look the same so like 2026-11-19, even if Excel or anything else that changed the format."""
+    """Make every date look the same, like 2026-11-19, even if Excel changed the format."""
+    # remove any empty rows that have no date (spreadsheet apps sometimes add these)
+    data = data.dropna(subset=["Date"])
     # reads the dates day first, like 19/11/2026
     data["Date"] = pd.to_datetime(data["Date"], dayfirst=True)
-    # writes them back as year/month/day so search can be able to find them 
+    # writes them back as year-month-day so search can find them
     data["Date"] = data["Date"].dt.strftime("%Y-%m-%d")
     return data
 
