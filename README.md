@@ -76,10 +76,9 @@ The bee facts are based on research about how weather affects bee flight (see in
 
 2. Open your terminal and go into the project folder:
    ```
-   cd BreezyBee
+   cd BreezyBee-Noor-Mohamed-main
    ```
-   If you downloaded the zip, the folder may be called `BreezyBee-main` so check what it is called and change directory name according to folder name
-
+  
 3. Install the libraries:
    ```
    pip install -r requirements.txt
