@@ -71,18 +71,27 @@ The bee facts are based on research about how weather affects bee flight (see in
 
 ## How to run it on your computer
 
-1. Install the libraries:
+1. Download the project:
+   - Click the green code button at the top of this page, then download zip and then unzip it
+   - or just click on the live demo link (if you don't want to download)
+
+2. Open your terminal and go into the project folder:
+   ```
+   cd BreezyBee
+   ```
+   If you downloaded the zip, the folder may be called `BreezyBee-main` so check what it is called and change directory name according to folder name
+
+3. Install the libraries:
    ```
    pip install -r requirements.txt
    ```
-2. Go to the project folder in the terminal:
-   ```
-   cd Weather_Tracker_Project
-   ```
-3. Run the app:
+
+4. Run the app:
    ```
    streamlit run BreezyBee.py
    ```
+
+The app opens in your browser and it will start with the sample data in weather.csv.
 
 ## Tools used
 
@@ -91,6 +100,6 @@ The bee facts are based on research about how weather affects bee flight (see in
 - pandas
 
 
-## Author
+## Creator
 
 Noor Mohamed: General Assembly Bahrain, Data Science Bootcamp DSB4
